@@ -13,7 +13,7 @@ class LocationESRule: TestRule {
                 assertion = Assertions()
                 assertion?.setLocation("ES")
                 try {
-                    base.evaluate()
+                    base.evaluate() //esta linea ejecuta la prueba actual
                 }finally {
                     assertion = null
                 }
