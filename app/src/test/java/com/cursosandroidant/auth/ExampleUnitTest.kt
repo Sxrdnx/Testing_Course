@@ -1,4 +1,4 @@
-package com.example.testing_app_curse_udemy
+package com.cursosandroidant.auth
 
 import org.junit.Test
 
