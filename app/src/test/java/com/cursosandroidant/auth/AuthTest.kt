@@ -21,10 +21,16 @@ class AuthTest {
         assertThat(isAuthenticated).isFalse()
     }
 
-    /* Este caso en este momento no funciona pues no se contepla esta cituacion en el test
+
     @Test
     fun login_nullEmail_return_false() {
         val isAuthenticated = userAuthentication(null,"1234")
         assertThat(isAuthenticated).isFalse()
-    }*/
+    }
+
+    @Test
+    fun login_nullPassword_return_false(){
+        val isAuthenticated = userAuthentication("ant@gmail.com",null)
+        assertThat(isAuthenticated).isFalse()
+    }
 }
