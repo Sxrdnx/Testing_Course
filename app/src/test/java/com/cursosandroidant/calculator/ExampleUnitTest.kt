@@ -1,4 +1,4 @@
-package com.example.testing_app_curse_udemy
+package com.cursosandroidant.calculator
 
 import org.junit.Test
 
