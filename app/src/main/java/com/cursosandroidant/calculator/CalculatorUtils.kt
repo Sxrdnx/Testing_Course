@@ -1,23 +1,12 @@
 package com.cursosandroidant.calculator
 
-/****
- * Project: Calculator
- * From: com.cursosandroidant.clcaulator
- * Created by Alain Nicolás Tello on 14/12/21 at 20:03
- * All rights reserved 2021.
- *
- * All my Udemy Courses:
- * https://www.udemy.com/user/alain-nicolas-tello/
- * Web: www.alainnicolastello.com
- ***/
 class CalculatorUtils(private val operations: Operations, private val listener: OnResolveListener) {
     fun checkOrResolve(operation: String, isFromResolve: Boolean){
         operations.tryResolve(operation, isFromResolve, listener)
     }
 
     fun addOperator(operator: String, operation: String, callback:()->Unit) {
-        val lastElement = if (operation.isEmpty()) ""
-        else operation.substring(operation.length - 1)
+        val lastElement = if (operation.isEmpty()) "" else operation.substring(operation.length - 1)
 
         if (operator == Constants.OPERATOR_SUB){
                if (operation.isEmpty() || lastElement != Constants.OPERATOR_SUB && lastElement != Constants.POINT){
