@@ -1,15 +1,6 @@
 package com.cursosandroidant.inventory.entities
 
-/****
- * Project: Inventory
- * From: com.cursosandroidant.inventory
- * Created by Alain Nicolás Tello on 15/12/21 at 19:23
- * All rights reserved 2021.
- *
- * All my Udemy Courses:
- * https://www.udemy.com/user/alain-nicolas-tello/
- * Web: www.alainnicolastello.com
- ***/
+
 data class Product(var id: Long = 0,
                    var name: String,
                    var quantity: Int,
